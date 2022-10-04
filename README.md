@@ -28,14 +28,22 @@ Matching a URL – /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/
 ### Anchors
 Anchors belong to the family of the regex tokens that don't match any characters, but that assert something about the string of the matching process.
 
-^ Start of string, or start of line in multi-line pattern
-$ matches the end of the string
+- "^" Start of string, or start of line in multi-line pattern: example- /^(https?:\/\/)
+- "$" matches the end of the string: example- ([\/\w \.-]*)*\/?$/
 
 ### Quantifiers
 Quantifiers specity how many instances of a character, group, or character class must be present in the input for a match to be found. 
+- "*" Matches 0 or more
+- "?" 0 or 1
+- "+" matches 1 or more
+
+With this knowledge we can take a look at our code and see that part of our example code is ([a-z\.]{2,6}), will match any string holding a-z.
+
 
 
 ### OR Operator
+You can use the | operator (logical OR) to match characters or expression of either the left or right of the | operator. 
+
 
 ### Character Classes
 
