@@ -100,11 +100,36 @@ Greedy and lazy are quantifiers.
 - Greedy means match longest possible stings. Examples: "*", "+", "?"
 
 ### Boundaries
+- The (\b) is an anchor like the caret (^) and the dollar sign ($). 
+- It matches a position that is called a “word boundary”. 
+- The word boundary match is zero-length.
+Example below:
+
+The following matches a 4-digit number surrounded by characters from a different \w
+console.log('ES 2022'.match(/\b\d\d\d\d\b/)); Output: "2022"
+
+
 
 ### Back-references
+- Lets say you want to match a pair of opening and closing HTML tags, and the text in between. 
+Here’s how: <([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>. This regex contains only one pair of parentheses, which capture the string matched by [A-Z][A-Z0-9]*. 
+- Click [https://www.regular-expressions.info/backref.html] for further details.
+
+- Backreferences match the same text as previously matched by a capturing group.
+- back-references are regular expression commands which refer to a previous part of the matched regular expression. Back-references are specified with backslash and a single digit 
+(e.g. ‘\1’). The part of the regular expression they refer to is called a subexpression, and is designated with parentheses.
+
 
 ### Look-ahead and Look-behind
+- Look-ahead and Look-behind match the context before or after the string
+
+- Examples
+(?=foo)	Lookahead	Asserts that what immediately follows the current position in the string is foo
+
+(?<=foo)	Lookbehind	Asserts that what immediately precedes the current position in the string is foo
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Christopher Roberts, Student in Full stack development Bootcamp at SMU
+
+- Github [https://github.com/Robertschris44]
