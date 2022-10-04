@@ -44,8 +44,24 @@ With this knowledge we can take a look at our code and see that part of our exam
 ### OR Operator
 You can use the | operator (logical OR) to match characters or expression of either the left or right of the | operator. 
 
+- Example const a = 3;
+const b = -2;
+
+console.log(a > 0 || b > 0);
+// output: true
+
+
 
 ### Character Classes
+In the context of regular expressions, a character class is a set of characters enclosed within square brackets. It specifies the characters that will successfully match a single character from a given input string.
+
+\s = White space
+\S = Not white space
+\d = Digit
+\D = Not digit
+\w = Word
+\W = Not word
+
 
 ### Flags
 
