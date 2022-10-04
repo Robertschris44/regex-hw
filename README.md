@@ -64,6 +64,16 @@ In the context of regular expressions, a character class is a set of characters 
 
 
 ### Flags
+A flag is an optional parameter to a regex that modifies its behavior of searching. A flag changes the default searching behavior of a regular expression. It makes a regex search in a different way. A flag is denoted using a single lowercase alphabetic character.
+
+- Examples "g, m, i, s, y, and u"
+
+- g, Global, Makes the expression search for all occurrences.
+- m, Multiline, Makes the boundary characters ^ and $ match the beginning and ending of every single line instead of the beginning and ending of the whole string.
+- i, Ignore Casing, Makes the expression search case-insensitively.
+- s, Dot All, Makes the wild character . match newlines as well.
+- y, Sticky, Makes the expression start its searching from the index indicated in its lastIndex property.
+- u, Unicode, Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
 
 ### Grouping and Capturing
 
