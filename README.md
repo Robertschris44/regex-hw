@@ -76,6 +76,11 @@ A flag is an optional parameter to a regex that modifies its behavior of searchi
 - u, Unicode, Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
 
 ### Grouping and Capturing
+Groups group multiple patterns as a whole, and capturing groups provide extra submatch information when using a regular expression pattern to match against a string.
+
+Parentheses group the regex between them. They capture the text matched by the regex inside them into a numbered group that can be reused with a numbered backreference. They allow you to apply regex operators to the entire grouped regex.
+
+- Example in our sample code above: the following is the second group "([\da-z\.-]+)", you can tell this because it is separated from the first group by a "?" and a different set of parenthesis. 
 
 ### Bracket Expressions
 
